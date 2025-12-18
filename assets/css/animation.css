@@ -1,0 +1,126 @@
+.slidInFromRight {
+    transform: translateX(40%);
+    opacity: 0;
+}
+
+.slidInFromRight.animate-slide-in {
+    animation: slide-in-from-right 0.7s ease-in-out 0.1s forwards;
+}
+
+@keyframes slide-in-from-right {
+    0% {
+        transform: translateX(40%);
+        /* Start position off-screen to the right */
+        opacity: 0;
+    }
+
+    100% { 
+        transform: translateX(0);
+        /* End position at its normal position */
+        opacity: 1;
+    }
+}
+
+
+
+/* observer from left to right slide  with same time as from left to right below*/
+.slidInFromLefttoright {
+    transform: translateX(-40%);
+    opacity: 0;
+}
+
+.slidInFromLefttoright.animate-slide-in {
+    animation: slide-in-from-left 0.7s ease-in-out 0.1s forwards;
+}
+
+@keyframes slide-in-from-left {
+    0% {
+        transform: translateX(-40%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* observer from left to right slide ends */
+
+
+
+
+
+/* Observer css animation from top to bottom slide */
+.slidInFromTop {
+    transform: translateY(-40%);
+    opacity: 0;
+}
+
+.slidInFromTop.animate-slide-in {
+    animation: slide-in-from-top 0.7s ease-in-out 0.2s forwards;
+}
+
+@keyframes slide-in-from-top {
+    0% {
+        transform: translateY(-40%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Observer css animation from top to bottom slide ends */
+
+
+/* Observer css animation from bottom to top slide */
+.slidInFromBottom {
+    transform: translateY(40%);
+    opacity: 0;
+}
+
+.slidInFromBottom.animate-slide-in {
+    animation: slide-in-from-bottom 0.8s ease-in-out 0.1s forwards;
+}
+
+@keyframes slide-in-from-bottom {
+    0% {
+        transform: translateY(40%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Observer css animation from bottom to top slide ends */
+
+
+/* Observer css animation from bottom to top slide with threshold 0.1 */
+.slidFromBtm0point1 {
+    transform: translateY(10%);
+    opacity: 0;
+}
+
+.slidFromBtm0point1.animate-slide-in {
+    animation: slide-in-from-bottom 1s ease-in-out 0.3s forwards;
+}
+
+@keyframes slide-in-from-bottom {
+    0% {
+        transform: translateY(10%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Observer css animation from bottom to top slide ends */
